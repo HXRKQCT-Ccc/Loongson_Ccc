@@ -8,13 +8,6 @@ import matplotlib.dates as mdates
 from datetime import datetime, timedelta
 import numpy as np
 
-"""
-Created on Sun Jun 22 19:38:11 2025
-Modified to plot 24-hour temperature, humidity and dew point data
-
-@author: zhaoweiji
-"""
-
 
 def calculate_dew_point(temperature, humidity):
     """计算露点温度"""
@@ -39,11 +32,11 @@ def show_temphum_by_day(day=None, device=""):
     try:
         # 连接数据库
         connection = mysql.connector.connect(
-            host='192.168.1.12',
-            database='db_group2',
-            user='group2',
-            password='group2',
-            port=3306
+            host='xxx',
+            database='xxx',
+            user='xxx',
+            password='xxx',
+            port=xxxx
         )
 
         if connection.is_connected():
